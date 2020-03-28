@@ -1,64 +1,68 @@
 const navigationConfig = [
-    {
-        'id'      : 'applications',
-        'title'   : 'Applications',
-        'type'    : 'group',
-        'icon'    : 'apps',
-        'children': [
-            {
-                'id'   : 'example-component',
-                'title': 'Example',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/example'
-            },
-            {
-                'id'   : 'login-component',
-                'title': 'Login',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/login'
-            },
-            {
-                'id'   : 'register-component',
-                'title': 'register',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/register'
-            },
-            {
-                'id'   : 'dashbord-component',
-                'title': 'dashbord',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/'
-            },
-            {
-                'id'   : 'users-component',
-                'title': 'users',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/users'
-            },
-            {
-                'id'   : 'team-component',
-                'title': 'team',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/team'
-            },
-            {
-                'id'   : 'chat-component',
-                'title': 'chat',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/chat'
-            },
-            
-            
-            
+  {
+    id: "applications",
+    title: "",
+    type: "group",
+    icon: "apps",
+    children: [
+      {
+        id: "pages",
+        title: "Pages",
+        type: "group",
+        icon: "pages",
+        children: [
+          {
+            id: "profile",
+            title: "Profile",
+            type: "item",
+            icon: "person",
+            url: "/pages/profile"
+          },
+          {
+            id: "chat",
+            title: "Chat",
+            type: "item",
+            icon: "chat",
+            url: "/pages/chat"
+          },
+          {
+            id: "users",
+            title: "Users",
+            type: "item",
+            icon: "persons",
+            url: "/pages/users"
+          },
+          {
+            id: "notes",
+            title: "Notes",
+            type: "item",
+            icon: "note",
+            url: "/pages/notes"
+          },
+          {
+            id: "errors",
+            title: "Errors",
+            type: "collapse",
+            icon: "error",
+            children: [
+              {
+                id: "404",
+                title: "404",
+                type: "item",
+                url: "/pages/errors/error-404"
+              },
+              {
+                id: "500",
+                title: "500",
+                type: "item",
+                url: "/pages/errors/error-500"
+              }
+            ]
+          }
         ]
-    }
+      }
+    ]
+  }
 ];
 
 export default navigationConfig;
