@@ -14,6 +14,7 @@ import { ProfilePageConfig } from "./profile/ProfilePageConfig";
 import { ChatAppConfig } from "./chat/ChatAppConfig";
 import { NotesAppConfig } from "./notes/NotesAppConfig";
 import { UsersPageConfig } from "./users/UsersConfigs";
+import { ContactsAppConfig } from "./contacts/ContactsAppConfig";
 
 export const pagesConfigs = [
   LoginPageConfig,
@@ -31,5 +32,6 @@ export const pagesConfigs = [
   ProfilePageConfig,
   ChatAppConfig,
   NotesAppConfig,
-  UsersPageConfig
+  UsersPageConfig,
+  ContactsAppConfig
 ];

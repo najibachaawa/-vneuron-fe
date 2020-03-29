@@ -40,6 +40,13 @@ const navigationConfig = [
             url: "/pages/notes"
           },
           {
+            id: "contacts",
+            title: "Contacts",
+            type: "item",
+            icon: "mail",
+            url: "/pages/contacts"
+          },
+          {
             id: "errors",
             title: "Errors",
             type: "collapse",
